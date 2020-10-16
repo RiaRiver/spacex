@@ -2,22 +2,22 @@ import React from "react";
 import './footer.css';
 import logo from "../../logo.svg";
 
-const Footer = ()=>(
+const Footer = ({companyLinks})=>(
   <footer className="footer">
     <img src={logo} alt="logo Space X" className="logo"/>
     <nav className="footer-nav">
       <ul className="list">
         <li className="item">
-          <a href="/" rel="noopener noreferrer" target='_blank' className="item-link">Elon Musk Twitter</a>
+          <a href={companyLinks.elon_twitter} rel="noopener noreferrer" target='_blank' className="item-link">Elon Musk Twitter</a>
         </li>
         <li className="item">
-          <a href="/" rel="noopener noreferrer" target='_blank' className="item-link">Twitter</a>
+          <a href={companyLinks.twitter} rel="noopener noreferrer" target='_blank' className="item-link">Twitter</a>
         </li>
         <li className="item">
-          <a href="/" rel="noopener noreferrer" target='_blank' className="item-link">Flickr</a>
+          <a href={companyLinks.flickr} rel="noopener noreferrer" target='_blank' className="item-link">Flickr</a>
         </li>
         <li className="item">
-          <a href="/" rel="noopener noreferrer" target='_blank' className="item-link">Website</a>
+          <a href={companyLinks.website} rel="noopener noreferrer" target='_blank' className="item-link">Website</a>
         </li>
       </ul>
     </nav>
